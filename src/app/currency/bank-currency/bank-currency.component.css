@@ -1,0 +1,7 @@
+.select {
+    width: 200px;
+}
+
+.horiz-select {
+    display: flex;
+}
