@@ -1,4 +1,4 @@
-<div>
+<div class="main">
     <form>
         <div class="horiz-select">
             <div class="select">
@@ -33,18 +33,21 @@
                 </ng-select>
             </div>
             <div class="btn">
-                <button (click)="getSelectedRates()">RESULT</button>
+                <button class="result-btn" (click)="getSelectedRates()">RESULT</button>
             </div>
         </div>
     </form>
-    <div *ngIf="errorText">
-        <p>{{ errorText }}</p>
+    <div class="result">
+        <div *ngIf="errorText">
+            <p>{{ errorText }}</p>
+        </div>
+        <div *ngIf="calculatedData.bestBuyRate.bank">
+            <p>The best sell rate bank: {{ calculatedData.bestSellRate.bank }} {{ calculatedData.bestSellRate.rate }} </p>
+            <p>The worst sell rate bank: {{ calculatedData.worstSellRate.bank }} {{ calculatedData.worstSellRate.rate }}</p>
+            <p>The best buy rate bank: {{ calculatedData.bestBuyRate.bank }} {{ calculatedData.bestBuyRate.rate }}</p>
+            <p>The worst buy rate bank: {{ calculatedData.worstBuyRate.bank }} {{ calculatedData.worstBuyRate.rate }}</p>
+        </div>
     </div>
-    <div *ngIf="calculatedData.bestBuyRate.bank">
-        <p>The best sell rate bank: {{ calculatedData.bestSellRate.bank }} {{ calculatedData.bestSellRate.rate }} </p>
-        <p>The worst sell rate bank: {{ calculatedData.worstSellRate.bank }} {{ calculatedData.worstSellRate.rate }}</p>
-        <p>The best buy rate bank: {{ calculatedData.bestBuyRate.bank }} {{ calculatedData.bestBuyRate.rate }}</p>
-        <p>The worst buy rate bank: {{ calculatedData.worstBuyRate.bank }} {{ calculatedData.worstBuyRate.rate }}</p>
-    </div>
+ 
    
 </div>

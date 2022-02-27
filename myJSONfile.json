@@ -66,12 +66,12 @@
                     "rates":[
                        {
                           "code":"USD",
-                          "sellRate":3.18,
-                          "buyRate":3.1
+                          "sellRate":3.15,
+                          "buyRate":3.04
                        },
                        {
                           "code":"EUR",
-                          "sellRate":3.90,
+                          "sellRate":3.85,
                           "buyRate":3.80
                        }
                     ]
@@ -253,7 +253,7 @@
                        {
                           "code":"EUR",
                           "sellRate":1.12,
-                          "buyRate":1.09
+                          "buyRate":1.06
                        }
                     ]
                  },
@@ -396,7 +396,7 @@
                   "rates":[
                      {
                         "code":"USD",
-                        "sellRate":3.18,
+                        "sellRate":3.13,
                         "buyRate":3.1
                      },
                      {
@@ -449,8 +449,8 @@
                   "rates":[
                      {
                         "code":"USD",
-                        "sellRate":3.09,
-                        "buyRate":3.02
+                        "sellRate":3.07,
+                        "buyRate":3
                      },
                      {
                         "code":"EUR",

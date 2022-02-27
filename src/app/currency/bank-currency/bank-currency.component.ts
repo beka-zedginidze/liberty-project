@@ -57,6 +57,15 @@ export class BankCurrencyComponent implements OnInit {
       this.calculatedData.bestBuyRate.bank = undefined
       return
     }
+    if(!this.firstCurrency || !this.secondCurrency) {
+      console.log("error");
+      this.errorText = "Please select all fields";
+      return
+    }
+    if(!this.monthValue) {
+      this.errorText = "Please select all fields";
+      return
+    }
       this.errorText = undefined
       let currencyRates:any = []
        this.bankData.forEach((data: any, index: any) =>{
